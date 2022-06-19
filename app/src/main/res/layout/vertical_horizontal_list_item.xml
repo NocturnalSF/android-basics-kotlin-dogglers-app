@@ -36,11 +36,50 @@
                The height should be 194dp
                The width should match the with of the card
                The scaleType should be set to centerCrop-->
-
+        <ImageView
+            android:id="@+id/dog_image"
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            android:importantForAccessibility="no"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/bella" />
         <!-- TODO: Create a TextView for each of the following:
                 The dog's name
                 The dog's age
                 The dog's hobbies-->
+        <TextView
+            android:id="@+id/dog_name"
+            app:layout_constraintTop_toBottomOf="@id/dog_image"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            tools:text="test"/>
+
+        <TextView
+            android:id="@+id/dog_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:textAppearance="?attr/textAppearanceBody1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/dog_name"
+            app:layout_constraintTop_toBottomOf="@id/dog_name"
+            tools:layout_editor_absoluteX="8dp"
+            tools:text="test" />
+        <TextView
+            android:id="@+id/dog_hobbies"
+            app:layout_constraintTop_toTopOf="@id/dog_age"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceBody1"
+            tools:text="test"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -37,7 +37,42 @@
                The height should be 194dp
                The width should match the with of the card
                The scaleType should be set to centerCrop-->
-
+        <ImageView
+            android:id="@+id/dog_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="194dp"
+            android:importantForAccessibility="no"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@drawable/bella"/>
+        <TextView
+            android:id="@+id/dog_name"
+            app:layout_constraintTop_toBottomOf="@id/dog_image"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            tools:text="test"/>
+        <TextView
+            android:id="@+id/dog_age"
+            app:layout_constraintTop_toBottomOf="@id/dog_name"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceBody1"
+            tools:text="test"/>
+        <TextView
+            android:id="@+id/dog_hobbies"
+            app:layout_constraintTop_toBottomOf="@id/dog_age"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceBody1"
+            tools:text="test"/>
         <!-- TODO: Create a TextView for each of the following:
                 The dog's name
                 The dog's age
